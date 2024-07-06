@@ -11,7 +11,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   if (idAsNumber === 4) {
     return new NextResponse(`<!DOCTYPE html><html><head>
     <title>This is frame 4</title>
-    <meta property="og:image" content="${process.env.NEXT_PUBLIC_SITE_URL}/park-4.png" />
+    <meta property="og:image" content="https://test-frames-peach.vercel.app/park-4.png" />
     <meta property="fc:frame" content="vNext" />
     <meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_SITE_URL}/park-4.png" />
     <meta property="fc:frame:button:1" content="View Tutorial" />
@@ -19,7 +19,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     <meta property="fc:frame:button:1:target" content="https://github.com/ChangoMan/frames" />
     <meta property="fc:frame:button:2" content="Restart" />
     <meta property="fc:frame:button:2:action" content="post" />
-    <meta property="fc:frame:button:2:target" content="${process.env.NEXT_PUBLIC_SITE_URL}/api/basic?id=1" />
+    <meta property="fc:frame:button:2:target" content="${process.env.NEXT_PUBLIC_SITE_URL}/frame" />
     </head></html>`)
   }
 
