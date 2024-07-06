@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Basic Frame',
     description: 'A Farcaster Frame Demo',
-    images: [`https://test-frames-peach.vercel.app//Quizz1.jpg`],
+    images: ["https://test-frames-peach.vercel.app/Quizz1.jpg"],
   },
   other: {
     'fc:frame': 'vNext',
-    'fc:frame:image': `https://test-frames-peach.vercel.app//Quizz1.jpg`,
-    'fc:frame:post_url': `https://test-frames-peach.vercel.app//api/basic?id=1`,
+    'fc:frame:image': "https://test-frames-peach.vercel.app/Quizz1.jpg",
+    'fc:frame:post_url': "https://test-frames-peach.vercel.app/api/basic?id=1",
     'fc:frame:button:1': 'Start',
   },
 };
