@@ -17,12 +17,12 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `/Quizz1.jpg`,
+    src: 'https://test-frames-peach.vercel.app/Quizz1.jpg',
   },
   input: {
     text: 'Your Email',
   },
-  postUrl: `https://test-frames-peach.vercel.app/api/advanced`,
+  postUrl: 'https://test-frames-peach.vercel.app/api/advanced',
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Advanced Frame',
     description: 'Another, more advanced frame example',
-    images: [`/Quizz1.jpg`],
+    images: ['https://test-frames-peach.vercel.app/Quizz1.jpg'],
   },
   other: {
     ...frameMetadata,
