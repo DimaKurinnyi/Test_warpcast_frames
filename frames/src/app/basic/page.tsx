@@ -1,25 +1,47 @@
+import { getFrameMetadata } from '@coinbase/onchainkit/frame';
 import type { Metadata } from 'next';
 
+const frameMetadata = getFrameMetadata({
+  buttons: [
+    {
+      label: 'hi hi',
+    },
+    {
+      label: 'hi hello',
+    },
+    {
+      label: 'hello hello',
+    },
+    {
+      label: 'Error',
+    },
+  ],
+  image: {
+    src: `https://test-frames-peach.vercel.app/Quizz1.jpg`,
+  },
+  input: {
+    text: 'Your Email',
+  },
+  postUrl: `https://test-frames-peach.vercel.app/api/advanced`,
+});
+
 export const metadata: Metadata = {
-  title: 'Basic Frame',
-  description: 'A Farcaster Frame Demo',
+  title: 'Advanced Frame',
+  description: 'Another, more advanced frame example',
   openGraph: {
-    title: 'Basic Frame',
-    description: 'A Farcaster Frame Demo',
-    images: ["https://test-frames-peach.vercel.app/Quizz1.jpg"],
+    title: 'Advanced Frame',
+    description: 'Another, more advanced frame example',
+    images: [`https://test-frames-peach.vercel.app/Quizz1.jpg`],
   },
   other: {
-    'fc:frame': 'vNext',
-    'fc:frame:image': "https://test-frames-peach.vercel.app/Quizz1.jpg",
-    'fc:frame:post_url': "https://test-frames-peach.vercel.app/api/basic?id=1",
-    'fc:frame:button:1': 'Start',
+    ...frameMetadata,
   },
 };
 
 export default function Page() {
   return (
-    <div>
-      <h1>Basic Frame</h1>
-    </div>
+    <>
+      <h1>Advanced Frame</h1>
+    </>
   );
 }
