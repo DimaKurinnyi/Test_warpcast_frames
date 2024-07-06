@@ -6,13 +6,14 @@ const frameMetadata = getFrameMetadata({
     {
       label: 'Sign Up!',
     },
+    {
+      label: 'Sign Up!',
+    },
   ],
   image: {
     src: 'https://warpcast-frames.vercel.app/site-preview.jpg',
   },
-  input: {
-    text: 'Your Email',
-  },
+  
   postUrl: `${process.env.NEXT_PUBLIC_SITE_URL}/api/advanced`,
 })
 
